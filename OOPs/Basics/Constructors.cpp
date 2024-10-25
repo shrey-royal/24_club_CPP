@@ -39,15 +39,15 @@ int main() {
     string name;
     double price;
 
-    printf("\nEnter id: ");
-    scanf("%d", &id);
+    cout << "\nEnter id: ";
+    cin >> id;
     
-    printf("\nEnter name: ");
+    cout << "\nEnter name: ";
     cin.ignore();
     getline(cin, name);
     
-    printf("\nEnter price: ");
-    scanf("%lf", &price);
+    cout << "\nEnter price: ";
+    cin >> price;
 
     Product p1(id, name, price), p2(p1);
 
